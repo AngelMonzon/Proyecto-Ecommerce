@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { CategoriesComponent } from './components/categories/categories.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
@@ -14,7 +16,11 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { EcommerceRoutingModule } from './ecommerce-routing.module';
+import { PrimengModule } from '../primeng/primeng.module';
 
+//PrimeNg
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
 
 
 @NgModule({
@@ -33,10 +39,15 @@ import { EcommerceRoutingModule } from './ecommerce-routing.module';
     ShoppingCartComponent,
     UserProfileComponent,
 
+
   ],
   imports: [
     CommonModule,
-    EcommerceRoutingModule
+    EcommerceRoutingModule,
+    FormsModule,
+    PrimengModule,
+    IconFieldModule,
+    InputIconModule
   ]
 })
 export class EcommerceModule { }
