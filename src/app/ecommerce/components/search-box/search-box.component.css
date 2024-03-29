@@ -1,0 +1,29 @@
+.search-container{
+  position: relative;
+}
+
+
+.search-container button{
+  position: absolute;
+  height: 45.1px;
+  width: 50px;
+  cursor: pointer;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.search-container button img {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px){
+  .search-container button{
+    height: 35px;
+    right: 0px;
+  }
+
+  .search-container button img {
+    width: 60%;
+  }
+}

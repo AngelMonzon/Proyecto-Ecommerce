@@ -1,1 +1,15 @@
-<p>categories works!</p>
+<div class="card flex justify-content-center categories">
+  <p-menu #menu [model]="items" [popup]="true"></p-menu>
+  <button pButton type="button" (click)="menu.toggle($event)"
+  icon="pi pi-bars" label="Categorias"></button>
+</div>
+
+<div class="category">
+  <button>Ofertas</button>
+  <button>Gorras</button>
+  <button>Calzado</button>
+  <button>Ropa</button>
+  <button>Relojes</button>
+  <button>Electronica</button>
+  <button>Hogar</button>
+</div>

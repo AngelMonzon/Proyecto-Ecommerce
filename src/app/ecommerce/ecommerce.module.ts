@@ -17,10 +17,11 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { EcommerceRoutingModule } from './ecommerce-routing.module';
 import { PrimengModule } from '../primeng/primeng.module';
+import { AdComponent } from './components/ad/ad.component';
+import { OffersComponent } from './components/offers/offers.component';
 
 //PrimeNg
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
+
 
 
 @NgModule({
@@ -38,6 +39,8 @@ import { InputIconModule } from 'primeng/inputicon';
     ProductDetailsComponent,
     ShoppingCartComponent,
     UserProfileComponent,
+    AdComponent,
+    OffersComponent,
 
 
   ],
@@ -46,8 +49,6 @@ import { InputIconModule } from 'primeng/inputicon';
     EcommerceRoutingModule,
     FormsModule,
     PrimengModule,
-    IconFieldModule,
-    InputIconModule
   ]
 })
 export class EcommerceModule { }

@@ -1,9 +1,4 @@
-<div class="card flex justify-content-center">
-  <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"></p-autoComplete>
+<div class="card flex justify-content-center search-container">
+  <p-autoComplete [size]="size" inputId="autocomplete-input" [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"></p-autoComplete>
+  <button><img src="assets/images/busqueda.png" alt=""></button>
 </div>
-
-<p-iconField iconPosition="left">
-  <p-inputIcon styleClass="pi pi-search" />
-  <input type="text" pInputText placeholder="Search" />
-</p-iconField>
-

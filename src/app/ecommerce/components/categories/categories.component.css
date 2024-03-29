@@ -1,0 +1,39 @@
+.categories{
+  display: inline-block;
+}
+
+.categories button{
+  padding: 5px 10px;
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+}
+
+.categories button:hover {
+  transform: scale(1.2,1.2);
+}
+
+.category{
+  display: inline-block;
+}
+
+.category button{
+  font-size: 1rem;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.category button:hover {
+  transform: scale(1.2, 1.2);
+}

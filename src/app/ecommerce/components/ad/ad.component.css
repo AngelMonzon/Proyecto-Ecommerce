@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+}
+
+.ad {
+  width: 100%;
+}
+
+.ad img {
+  width: 100%;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 45%;
+}
+
+.pagination input {
+  background-color: red;
+}

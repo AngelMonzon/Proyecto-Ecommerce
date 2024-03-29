@@ -1,24 +1,28 @@
 :host {
   display: block;
-}
-
-.up{
-  padding: 10px;
+  background-color: deepskyblue;
 }
 
 .container{
-  width: 93%;
+  width: 84%;
   margin: 0 auto;
+  /* background-color: deepskyblue; */
+}
+
+/* Parte de arriba */
+.up{
+  padding: 10px;
+  position: relative;
 }
 
 .logo{
   display: inline-block;
   vertical-align: top;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .logo-img{
-  width: 120px;
+  height: 46px;
 }
 
 .search{
@@ -26,15 +30,108 @@
   vertical-align: top;
 }
 
-.menu{
-  display: inline-block;
-}
-
 .shopping-cart{
+  position: absolute;
+  right: 100px;
   display: inline-block;
+  height: 45.1px;
+  margin-right: 0px;
 }
 
+.shopping-cart button{
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.shopping-cart button:hover {
+  transform: scale(1.2,1.2);
+}
+
+.shopping-cart button img{
+  height: 90%;
+}
+
+.menu{
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  height: 45.1px;
+}
+
+.menu button{
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  transform: scale(1.2,1.2);
+}
+
+.menu button img{
+  height: 90%;
+}
+
+/* Parte de abajo */
+.down{
+  display: block;
+}
 
 .categories{
   display: inline-block;
+  margin-left: 150px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 98%;
+  }
+
+  .categories{
+    margin-left: 105px;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .logo{
+    margin-right: 10px;
+  }
+  .shopping-cart{
+    right: 60px;
+  }
+  .categories{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .up{
+    padding: 5px;
+  }
+  .logo div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    height: 35px;
+  }
+  .logo div img {
+    height: 35px;
+    vertical-align: middle;
+  }
+  .shopping-cart{
+    right: 38px;
+    height: 35px;
+    margin-right: 0px;
+  }
+  .menu{
+    height: 35px;
+  }
+}
+
+

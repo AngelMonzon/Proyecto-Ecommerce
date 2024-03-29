@@ -1,0 +1,11 @@
+<div *ngFor="let div of divs; let i = index" [@slideInOut]>
+  <div *ngIf="i === currentIndex" class="ad">
+    <img [src]="img[i]" alt="">
+  </div>
+</div>
+
+<div class="pagination">
+  <input *ngFor="let div of divs; let i = index"
+        type="radio" id="radio{{i}}" name="radioGroup"
+        [value]="i" [(ngModel)]="currentIndex">
+</div>
